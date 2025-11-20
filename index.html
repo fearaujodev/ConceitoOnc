@@ -3,185 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conceito Oncológico</title>
+    <title>Conceitos Oncológicos</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/inicio.css">
-    <link rel="stylesheet" href="./css/receitas.css">
-    <link rel="stylesheet" href="./css/sobre.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/receitas.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
 </head>
 
 <body>
-<header>
-    <nav id="navbar">
-        <div class="logo">
-            <a href="index.html"><img src="img/logo-oncvida.png" alt="Logo"></a>
 
-        </div>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="img/logo-oncvida.png" alt="Logo">
+            </a>
 
-        <ul id="nav_list">
-            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
-            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
-            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
-        </ul>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#guia-de-receitas">Receitas</a></li>
+                <li><a href="#sobre-nos">Sobre Nós</a></li>
+                <li><a href="sintomas.html">Sintomas</a></li>
+            </ul>
 
-        <button id="mobile_btn">☰</button>
-    </nav>
-
-    <div id="mobile_menu">
-        <ul id="mobile_nav_list">
-            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
-            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
-            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
-        </ul>
-    </div>
-</header>
-
-
-    <main id="conteudo">
-
-        <section id="inicio">
-            <div id="cta-one">
-                <h1 class="titulo">Cuidado Oncológico</h1>
-                <p class="descricao">
-                    Aqui, o alimento é aliado na busca por saúde e bem-estar durante o tratamento.
-                </p>
-                <a href="sintomas.html" class="btn-saiba-mais">Saiba mais sobre os sintomas</a>
+            <div class="hamburger">
+                <span></span><span></span><span></span>
             </div>
-        </section>
+        </nav>
+    </header>
 
-        <section id="guia-de-receitas">
-    <h2 class="section-title">Guia de Receitas para o Paciente Oncológico</h2>
-    <p>Nossas receitas especiais</p>
-
-    <div class="receitas-container">
-
-        <!-- RECEITA DESTAQUE -->
-        <div class="prato destaque">
-            <img src="img/on-cookies.jpg" alt="OnCookies - Cookie com Gengibre">
-            <h3 class="titulo-prato">OnCookies</h3>
-            <span class="descricao-prato">
-            Esses cookies com gengibre foram desenvolvidos pensando no
- conforto e na saúde de quem está em tratamento. 
-            </span>
-            <ul class="lista-receitas">
-                <li><a href="receitas/oncookies.html"> • Veja a receita completa</a></li>
-            </ul>
-        </div>
-
-        <!-- RECEITAS EXISTENTES -->
-        <div class="prato">
-            <img src="img/torta-banana.jpg" alt="">
-            <h3 class="titulo-prato">Sobremesas</h3>
-            <span class="descricao-prato">
-                Leves, nutritivas e ricas em vitaminas para manter energia e facilitar o consumo.
-            </span>
-            <ul class="lista-receitas">
-                <li><a href="receitas/gelatina-de-frutas.html"> • Gelatina de Frutas</a></li>
-                <li><a href="receitas/panqueca-de-banana.html"> • Panqueca de banana</a></li>
-            </ul>
-        </div>
-
-        <div class="prato">
-            <img src="img/torta-de-frango.png" alt="">
-            <h3 class="titulo-prato">Pratos Principais</h3>
-            <span class="descricao-prato">
-                Equilibrados, fáceis de digerir e ricos em proteínas para força e apetite.
-            </span>
-            <ul class="lista-receitas">
-                <li><a href="receitas/risoto-caprese.html"> • Risoto caprese</a></li>
-                <li><a href="receitas/torta-de-legumes-e-frango.html"> • Torta de legumes e frango</a></li>
-            </ul>
-        </div>
-
-        <div class="prato">
-            <img src="img/salada-macarrao.jpg" alt="">
-            <h3 class="titulo-prato">Saladas</h3>
-            <span class="descricao-prato">
-                Frescas e ricas em fibras e vitaminas para hidratação e digestão.
-            </span>
-            <ul class="lista-receitas">
-                <li><a href="receitas/salada-macarrao.html"> • Salada colorida de macarrão com atum</a></li>
-                <li><a href="receitas/salada-alface-guacamole.html"> • Salada de alface ao molho guacamole</a></li>
-            </ul>
-        </div>
-
-        <div class="prato">
-            <img src="img/refresco-melancia.jpg" alt="">
-            <h3 class="titulo-prato">Bebidas</h3>
-            <span class="descricao-prato">
-                Refrescantes e antioxidantes para hidratar e aliviar boca seca.
-            </span>
-            <ul class="lista-receitas">
-                <li><a href="receitas/smoothie-refrescante.html"> • Smothie refrescante</a></li>
-                <li><a href="receitas/refresco-de-melancia.html"> • Refresco de melancia</a></li>
-            </ul>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-        <section id="sobre-nos">
-            <div id="cta-two">
-                <h1>Sobre nós</h1>
+    <!-- INÍCIO -->
+    <section id="inicio" class="inicio">
+        <div class="inicio-container">
+            <div class="inicio-texto">
+                <h1>Conceitos Oncológicos</h1>
                 <p>
-                    Somos estudantes concluintes do curso Técnico em Nutrição e
-                    Dietética da ETEC Parque Belém. Nosso principal objetivo é
-                    oferecer orientações práticas e seguras sobre alimentação para
-                    pessoas que estão enfrentando o tratamento do câncer.
-                    Sabemos que esse momento pode trazer muitos desafios,
-                    inclusive em relação à nutrição — que é fundamental para
-                    fortalecer o organismo, reduzir efeitos colaterais do tratamento
-                    e melhorar a qualidade de vida.
-                    Este guia foi elaborado com base em informações atualizadas e
-                    confiáveis, buscando auxiliar pacientes, familiares e cuidadores
-                    a fazerem escolhas alimentares mais saudáveis, equilibradas e
-                    adaptadas às necessidades de cada fase do tratamento.
-                    Esperamos que este material seja um apoio importante na sua
-                    jornada.
+                    Aqui você encontra informações importantes sobre cuidados, prevenção e alimentação
+                    pensadas especialmente para pacientes oncológicos.
                 </p>
             </div>
 
-            <img src="img/sobre-nos.jpg" alt="Foto do grupo" class="foto-grupo">
-        </section>
-    </main>
-<footer class="footer">
-    <div class="py-5 fw-light bg-gray-800 text-gray-300" style="background-color: #8b9c6f; 
-                color: #e9ffc5; 
-                padding-top: 2rem !important; 
-                padding-bottom: 3rem !important;">
+            <div class="inicio-img">
+                <img src="img/banner-sobre.png" alt="Banner">
+            </div>
+        </div>
+    </section>
 
-      <div class="container d-flex justify-content-center">
-        <div class="row w-100">
+    <!-- RECEITAS -->
+    <section id="guia-de-receitas" class="receitas">
+        <h2>Guia de Receitas</h2>
 
-          <div class="col-12 text-center pt-3 pb-3">
+        <div class="receitas-container">
 
-            <p class="mb-1">© 2025 Conceito Oncológico. Todos os Direitos Reservados.</p>
+            <div class="receita-card">
+                <img src="img/on-cookies.jpg" alt="Cookies de Gengibre">
+                <h3>Cookies de Gengibre</h3>
+                <p>Doces, saudáveis e ideais para pacientes com náusea.</p>
+                <a href="receitas/cookies.html" class="btn">Ver Receita</a>
+            </div>
 
-            <p class="mb-3">
-              <a class="mx-md-2" href="https://etecparquebelem.cps.sp.gov.br/" style="color: #e9ffc5">Etec Parque Belém </a>
-            </p>
-          </div>
+            <div class="receita-card">
+                <img src="img/smoothie.jpeg" alt="Smoothie Energético">
+                <h3>Smoothie Energético</h3>
+                <p>Rico em vitaminas e fácil de digerir.</p>
+                <a href="receitas/smoothie.html" class="btn">Ver Receita</a>
+            </div>
+
+            <div class="receita-card">
+                <img src="img/gelatina-de-frutas.jpg" alt="Gelatina Natural">
+                <h3>Gelatina Natural</h3>
+                <p>Hidratante e refrescante para dias difíceis.</p>
+                <a href="receitas/gelatina.html" class="btn">Ver Receita</a>
+            </div>
 
         </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-    <script src="js/script.js"></script>
+    <!-- SOBRE NÓS -->
+    <section id="sobre-nos" class="sobre">
+        <h2>Sobre Nós</h2>
+
+        <div class="sobre-container">
+            <img src="img/sobre-nos.jpg" alt="Equipe">
+            <div class="sobre-texto">
+                <p>
+                    Somos um grupo dedicado a promover informações confiáveis sobre saúde, 
+                    alimentação e bem-estar para pacientes em tratamento oncológico.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 - Conceitos Oncológicos | Desenvolvido com carinho</p>
+    </footer>
+
+    <script src="js/menu.js"></script>
 </body>
 </html>
