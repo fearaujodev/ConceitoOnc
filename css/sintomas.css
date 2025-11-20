@@ -1,0 +1,131 @@
+/* Página sintomas */
+#pagina-sintomas {
+    background: linear-gradient(to right, #8b9c6f, #e6f0d5);
+    padding: 120px 8% 60px; /* espaço extra no topo p/ não ficar embaixo do header */
+}
+
+.titulo-sintomas {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #2c4c0c;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.container-sintomas {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.sintoma {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #8b9c6f;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.sintoma:hover {
+    transform: translateY(-3px);
+}
+
+.sintoma h3 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.sintoma p {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Bolinhas */
+.bolinha {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 5px;
+}
+
+.bolinha.azul    { background-color: #00c8ff; }
+.bolinha.verde   { background-color: #00ff0d; }
+.bolinha.amarela { background-color: #fffb00; }
+.bolinha.laranja { background-color: #ff9100; }
+.bolinha.vermelha { background-color: #e74c3c; }
+.bolinha.cinza   { background-color: #787f7f; }
+
+#info-sintomas {
+    background-color: #e6f0d5; /* tom claro para destaque */
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#info-sintomas p {
+    color: #2c4c0c;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* ====== EFEITOS PROFISSIONAIS PARA CARDS DE SINTOMAS ====== */
+
+.sintoma {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Brilho diagonal semelhante ao das receitas */
+.sintoma::after {
+    content: "";
+    position: absolute;
+    top: -120%;
+    left: -120%;
+    width: 250%;
+    height: 250%;
+    background: rgba(255, 255, 255, 0.15);
+    transform: rotate(25deg);
+    transition: all 0.6s ease;
+    opacity: 0;
+}
+
+.sintoma:hover::after {
+    top: -20%;
+    left: -20%;
+    opacity: 1;
+}
+
+/* Levantar + sombra forte */
+.sintoma:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Conteúdo sobe levemente */
+.sintoma h3,
+.sintoma p {
+    transition: transform 0.3s ease;
+}
+
+.sintoma:hover h3,
+.sintoma:hover p {
+    transform: translateY(-3px);
+}
+
+/* Bolinha com efeito de pulsar ao hover */
+.sintoma .bolinha {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sintoma:hover .bolinha {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(255,255,255,0.7);
+}

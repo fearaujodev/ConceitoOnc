@@ -1,0 +1,87 @@
+#receita {
+    padding: 100px 8% 60px;
+    background: linear-gradient(to right, #8b9c6f, #dfe5d4);
+    min-height: 100vh;
+}
+
+.container-receita {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #8b9c6f;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+.titulo-receita {
+    font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    color: #e9ffc5;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.descricao-receita {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.midia-receita {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.foto-receita {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.conteudo-receita h2 {
+    font-size: 1.5rem;
+    color: #e9ffc5;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.conteudo-receita ul,
+.conteudo-receita ol {
+    margin-left: 20px;
+    font-size: 1rem;
+    color: white;
+}
+
+.video-receita {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.video-receita h2 {
+    font-size: 1.5rem;
+    color: #e9ffc5;
+    margin-bottom: 15px;
+}
+
+.video-receita iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 340px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Alinha e ajusta todas as imagens das receitas */
+.midia-receita img,
+.foto-receita {
+    width: 100%;       /* ocupa toda a largura do container */
+    max-width: 500px;  /* opcional: define limite máximo */
+    height: 380px;     /* altura fixa para uniformidade */
+    object-fit: cover; /* mantém proporção e corta excesso */
+    border-radius: 5px; /* opcional: cantos arredondados */
+}

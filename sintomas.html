@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintomas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/sintomas.css">
+    <link rel="stylesheet" href="/css/footer.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body class="sintomas">
+
+    <!-- HEADER -->
+<header>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo-oncvida.png" alt="Logo"></a>
+        </div>
+
+        <ul id="nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+
+        <button id="mobile_btn">☰</button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+    </div>
+</header>
+
+    <!-- CONTEÚDO -->
+    <main id="pagina-sintomas">
+        <section class="container-sintomas">
+            <h1 class="titulo-sintomas">Sintomas Comuns e Suas Respectivas Receitas</h1>
+
+            <div class="sintoma">
+                <span class="bolinha verde"></span>
+                <div>
+                    <h3>Boca Seca</h3>
+                    <p>Comum durante tratamentos como quimioterapia ou radioterapia, a boca seca pode dificultar a fala, a mastigação e a deglutição, além de aumentar o risco de infecções na região.</p>
+                </div>
+            </div>
+
+            <div class="sintoma">
+                <span class="bolinha vermelha"></span>
+                <div>
+                    <h3>Náuseas e vômitos</h3>
+                    <p>Podem ocorrer devido aos efeitos colaterais de tratamentos ou como reação do organismo à presença de tumores, prejudicando a alimentação e a hidratação adequadas.</p>
+                </div>
+            </div>
+
+            <div class="sintoma">
+                <span class="bolinha cinza"></span>
+                <div>
+                    <h3>Falta de apetite</h3>
+                    <p>A diminuição da vontade de se alimentar pode estar ligada a alterações no metabolismo, tratamentos ou efeitos psicológicos da doença, contribuindo para perda de peso.</p>
+                </div>
+            </div>
+
+            <div class="sintoma">
+                <span class="bolinha laranja"></span>
+                <div>
+                    <h3>Constipação e diarreia</h3>
+                    <p>Alterações intestinais frequentes podem ser causadas por tratamentos, medicamentos ou pela própria evolução da doença, exigindo atenção para evitar desidratação e desconforto.</p>
+                </div>
+            </div>
+
+            <div class="sintoma">
+                <span class="bolinha azul"></span>
+                <div>
+                    <h3>Alterações no paladar</h3>
+                    <p>O tratamento pode modificar a percepção de sabores, deixando alimentos com gosto metálico, amargo ou diferente do habitual, o que pode afetar a ingestão de nutrientes.</p>
+                </div>
+            </div>
+
+            <div class="sintoma">
+                <span class="bolinha amarela"></span>
+                <div>
+                    <h3>Feridas na boca e língua</h3>
+                    <p>Feridas persistentes, dolorosas ou que dificultam a alimentação podem ser resultado de tratamentos ou de infecções, e em alguns casos, indicar presença de lesões malignas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="info-sintomas">
+            <p>
+                As cores representarão um tipo de sintoma diferente e as receitas terão o objetivo de amenizá-lo.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+    <div class="py-5 fw-light bg-gray-800 text-gray-300" style="background-color: #8b9c6f; 
+                color: #e9ffc5; 
+                padding-top: 2rem !important; 
+                padding-bottom: 3rem !important;">
+
+      <div class="container d-flex justify-content-center">
+        <div class="row w-100">
+
+          <div class="col-12 text-center pt-3 pb-3">
+
+            <p class="mb-1">© 2025 Conceito Oncológico. Todos os Direitos Reservados.</p>
+
+            <p class="mb-3">
+              <a class="mx-md-2" href="#" data-toggle="modal" data-target="#termos" style="color: #e9ffc5">Etec Parque Belém</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+                     <!-- JS -->
+    <script src="js/script.js"></script>
+
+    <!-- ScrollReveal config -->
+    <script>
+        ScrollReveal().reveal('.titulo-sintomas', {
+            duration: 1000,
+            origin: 'top',
+            distance: '50px',
+            easing: 'ease-in-out'
+        });
+
+        ScrollReveal().reveal('.sintoma', {
+            duration: 1000,
+            origin: 'bottom',
+            distance: '50px',
+            easing: 'ease-in-out',
+            interval: 200
+        });
+
+        ScrollReveal().reveal('#info-sintomas', {
+            duration: 1000,
+            origin: 'left',
+            distance: '50px',
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>

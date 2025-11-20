@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refresco de Melancia</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/receita-detalhe.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  
+  <!-- HEADER -->
+<header>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo-oncvida.png" alt="Logo"></a>
+        </div>
+
+        <ul id="nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+
+        <button id="mobile_btn">☰</button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+    </div>
+</header>
+
+  <!-- CONTEÚDO -->
+  <main id="receita">
+      <section class="container-receita">
+          <h1 class="titulo-receita">Refresco de Melancia</h1>
+          <p class="descricao-receita">Refresco de Melancia</p>
+          
+          <!-- FOTO -->
+          <div class="midia-receita">
+              <img src="/img/refresco-melancia.jpg" alt="Flan de Goiaba" class="foto-receita">
+          </div>
+
+          <!-- INGREDIENTES -->
+          <div class="conteudo-receita">
+              <h2>Ingredientes</h2>
+              <ul>
+                  <li>4 xícaras de chá de melancia sem sementes cortada em cubos</li>
+		              <li>1 xícara de chá de água</li>
+		              <li>2 copos de iogurte natural desnatado</li>
+		              <li>2 colheres de chá de gengibre ralado</li>
+		              <li>Folhas de hortelã para decorar</li>
+              </ul>
+
+              <h2>Modo de Preparo</h2>
+              <ol>
+                  <li>Bata todos os ingredientes no liquidificador.</li>
+		              <li>Distribua o suco em copos, decore com a hortelã e sirva gelado.</li>
+              </ol>
+          </div>
+
+          <!-- VÍDEO -->
+          <div class="video-receita">
+              <h2>Assista ao Preparo</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1IGG7vImh8Q?si=KozxeZt3WYm6OkTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          
+      </section>
+  </main>
+
+  <footer class="footer">
+    <div class="py-5 fw-light bg-gray-800 text-gray-300" style="background-color: #8b9c6f; 
+                color: #e9ffc5; 
+                padding-top: 2rem !important; 
+                padding-bottom: 3rem !important;">
+
+      <div class="container d-flex justify-content-center">
+        <div class="row w-100">
+
+          <div class="col-12 text-center pt-3 pb-3">
+
+            <p class="mb-1">© 2025 Conceito Oncológico. Todos os Direitos Reservados.</p>
+
+            <p class="mb-3">
+              <a class="mx-md-2" href="https://etecparquebelem.cps.sp.gov.br/" style="color: #e9ffc5">Etec Parque Belém </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="../js/script.js"></script>
+
+  <script>
+  const sr = ScrollReveal({
+    duration: 800,
+    distance: '50px',
+    easing: 'ease-out',
+    reset: false
+  });
+
+  // Título e descrição
+  sr.reveal('.titulo-receita', { origin: 'top' });
+  sr.reveal('.descricao-receita', { origin: 'top', delay: 150 });

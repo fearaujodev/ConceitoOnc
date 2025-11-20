@@ -1,0 +1,17 @@
+footer .container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #e9ffc5;
+}
+
+footer {
+    width: 100%;
+    color: #e9ffc5;
+}
+
+footer .row {
+    justify-content: center !important;
+    text-align: center !important; 
+    color: #e9ffc5;
+};

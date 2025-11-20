@@ -1,0 +1,107 @@
+#inicio {
+  height: 100vh;
+  background: url('/img/10.png') no-repeat center bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;     /* conteúdo no fundo */
+  align-items: center;           /* centraliza horizontalmente */
+  padding: 0 8% 60px;            /* espaço na base */
+  text-align: center;
+}
+
+#cta {
+    z-index: 2;
+    max-width: 600px;
+}
+
+#cta-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 5rem !important;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #344a17;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  margin-left: 0; /* remove alinhamento à esquerda */
+}
+
+.descricao {
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  max-width: 750px;
+  color: #344a17;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.btn-saiba-mais {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #344a17;
+    color: #fff5e9;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-saiba-mais:hover {
+    background-color: #d6fa9d;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  #inicio {
+    height: 100vh;
+    background: url('/img/10.png') no-repeat center bottom;
+    background-size: cover;
+
+    padding: 0 8% 50px !important; /* igual ao desktop */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end !important;  /* 🔥 mantém o conteúdo NO FUNDO */
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo {
+    font-size: 2.3rem !important;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+
+  .descricao {
+    font-size: 1rem;
+    max-width: 90%;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  #cta-one {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-saiba-mais {
+    font-size: 1rem;
+    padding: 12px 25px;
+  }
+}
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salada de Macarrão Tricolor com Atum</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/receita-detalhe.css">
+  <link rel="stylesheet" href="/css/footer.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  
+  <!-- HEADER -->
+<header>
+    <nav id="navbar">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/logo-oncvida.png" alt="Logo"></a>
+        </div>
+
+        <ul id="nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+
+        <button id="mobile_btn">☰</button>
+    </nav>
+
+    <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+            <li class="nav-item"><a href="../index.html#inicio">Início</a></li>
+            <li class="nav-item"><a href="../index.html#guia-de-receitas">Receitas</a></li>
+            <li class="nav-item"><a href="../index.html#sobre-nos">Sobre Nós</a></li>
+        </ul>
+    </div>
+</header>
+
+  <!-- CONTEÚDO -->
+  <main id="receita">
+      <section class="container-receita">
+          <h1 class="titulo-receita">Salada de macarrão tricolor com atum</h1>
+          <p class="descricao-receita">Salada de macarrão tricolor com atum</p>
+          
+          <!-- FOTO -->
+          <div class="midia-receita">
+              <img src="/img/salada-macarrao.jpg" alt="Flan de Goiaba" class="foto-receita">
+          </div>
+
+          <!-- INGREDIENTES -->
+          <div class="conteudo-receita">
+              <h2>Ingredientes</h2>
+              <ul>
+                  <li>½ pacote (250 g) de macarrão tricolor cozido “al dente”</li>
+                  <li>2 xícaras (chá) de atum em conserva no azeite</li>
+                  <li>1 cenoura grande ralada</li>
+                  <li>1 xícara (chá) cheia de milho verde cozido (congelado ou conserva)</li>
+                  <li>1 colher (sopa) cheia de salsinha picada</li>
+                  <li>1 colher (sopa) cheia de cebolinha picada</li>
+                  <li>Azeite a gosto</li>
+                  <li>Sal a gosto</li>
+              </ul>
+
+              <h2>Modo de Preparo</h2>
+              <ol>
+                  <li>Misture todos os ingredientes em um refratário.</li>
+                  <li>Sirva refrigerado.</li>
+              </ol>
+          </div>
+
+          <!-- VÍDEO -->
+          <div class="video-receita">
+              <h2>Assista ao Preparo</h2>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xLbBzVETuI8?si=LksScdPaQ6TEIp2n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          
+      </section>
+  </main>
+<footer class="footer">
+    <div class="py-5 fw-light bg-gray-800 text-gray-300" style="background-color: #8b9c6f; 
+                color: #e9ffc5; 
+                padding-top: 2rem !important; 
+                padding-bottom: 3rem !important;">
+
+      <div class="container d-flex justify-content-center">
+        <div class="row w-100">
+
+          <div class="col-12 text-center pt-3 pb-3">
+
+            <p class="mb-1">© 2025 Conceito Oncológico. Todos os Direitos Reservados.</p>
+
+            <p class="mb-3">
+              <a class="mx-md-2" href="https://etecparquebelem.cps.sp.gov.br/" style="color: #e9ffc5">Etec Parque Belém </a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../js/script.js"></script>
+
+  <script>
+  const sr = ScrollReveal({
+    duration: 800,
+    distance: '50px',
+    easing: 'ease-out',
+    reset: false
+  });
+
+  // Título e descrição
+  sr.reveal('.titulo-receita', { origin: 'top' });
+  sr.reveal('.descricao-receita', { origin: 'top', delay: 150 });
+
+  // Foto
+  sr.reveal('.midia-receita', { origin: 'left', delay: 300 });
+
+  // Ingredientes e preparo
+  sr.reveal('.conteudo-receita', { origin: 'right', delay: 450 });
+
+  // Vídeo
+  sr.reveal('.video-receita', { origin: 'bottom', delay: 600 });
+</script>
+
+</body>
+</html>

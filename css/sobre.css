@@ -1,0 +1,97 @@
+#sobre-nos {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right, #658121, #fff5e9);
+    background: url('/img/8.png') no-repeat center top;
+    background-size: cover;
+    position: relative;
+}
+
+#cta-two {
+    position: absolute;
+    top: 55px;
+    left: 50px;
+    color: #19692c;
+}
+
+#cta-two h1 {
+    font-size: 4.6rem;
+    font-family: "Bebas Neue", sans-serif;
+    margin-top: 10px;
+    white-space: nowrap;
+    color: #fff5e9;
+    margin-left: 97px;
+}
+
+#cta-two p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin-top: 120px;
+    margin-left: 50px;
+    color: #fcf6e6;
+}
+
+.foto-grupo {
+    position: absolute;
+    bottom: 40px; 
+    right: 50px; 
+    width: 900px;
+    height: 700px;
+    top: 150px;
+    object-fit: cover;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ============================= */
+/*         MOBILE (ENFEITADO)   */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  #sobre-nos {
+    background: none;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  /* CARD DO TEXTO */
+  #cta-two {
+    position: static;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.85); /* branco translúcido */
+    backdrop-filter: blur(6px);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    max-width: 90%;
+  }
+
+  #cta-two h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #19692c;
+    white-space: normal; /* permite quebrar linha */
+    margin-left: 7px;
+  }
+
+  #cta-two p {
+    font-size: 1rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  /* IMAGEM COM FUNDO/ENFEITE */
+  .foto-grupo {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto 0;
+    padding: 10px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  }
+}
